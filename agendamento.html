@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Agendamento Formulário</title>
+	<script src="javaScript/agendamento-form.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<link
+		href="https://swiffyslider.com/configuration/?slider-nav-autoplay=slider-nav-autoplay&data-slider-nav-autoplay-interval=3000&slider-indicators-style=slider-indicators-round">
+	<script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js" crossorigin="anonymous"
+		defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.3/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
+		defer></script>
+	<link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.3/dist/css/swiffy-slider.min.css" rel="stylesheet"
+		crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style-agendamento.css">
+
+</head>
+
+<body>
+	<nav>
+		<img src="image/logo.png" alt="">
+	</nav>
+	<div class="box-form">
+		<div class="left">
+			<div class="overlay">
+				<div class="swiffy-slider slider-nav-autoplay slider-indicators-round"
+					data-slider-nav-autoplay-interval="3000">
+					<ul class="slider-container">
+						<li>
+							<div id="slide1" style="background-image: url(/image/Piscina-Unimar.jpg);">
+								<img src="" alt="">
+							</div>
+						</li>
+						<li>
+							<div id="slide2"
+								style="background-image: url(/image/Ginásio-de-Esportes-Unimar-960x640.jpg);">
+								<img src="" alt="">
+							</div>
+						</li>
+						<li>
+							<div id="slide3" style="background-image: url(/image/campo-de-futebol-unimar.png);">
+								<img src="" alt="">
+							</div>
+						</li>
+						<li>
+							<div id="slide4"
+								style="background-image: url(/image/FAFIPE.jpg);">
+								<img src="" alt="">
+							</div>
+						</li>
+						<li>
+							<div id="slide5" style="background-image: url(/image/quadrarede.jpg);">
+								<img src="" alt="">
+							</div>
+						</li>
+						<li>
+							<div id="slide6"
+								style="background-image: url(/image/areia.jpg);">
+								<img src="" alt="">
+							</div>
+						</li>
+						<li>
+							<div id="slide7" style="background-image: url(/image/quadras.jpg);">
+								<img src="" alt="">
+							</div>
+						</li>
+						<li>
+							<div id="slide8"
+								style="background-image: url(/image/piscina2.jpg);">
+								<img src="" alt="">
+							</div>
+						</li>
+						<li>
+							<div id="slide9" style="background-image: url(/image/quadra2.jpg);">
+								<img src="" alt="">
+							</div>
+						</li>
+					</ul>
+					<ul class="slider-indicators">
+						<li class="active"></li>
+						<li class=""></li>
+						<li class=""></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+		<form class="right">
+			
+			<div class="inputs">
+				<h1>Agendamento</h1>
+				<input type="text" placeholder="Nome completo:" required id="name-input" value="">
+				<br>
+				<input type="number" placeholder="CPF:" required id="cpfinput" value="">
+				<br>
+				<select required id="opcao">
+					<option disabled selected style="text-align: center;">Selecionar</option>
+					<option value="academia">Academia</option>
+					<option value="Piscina">Piscina</option>
+					<option value="Ginásio">Ginásio</option>
+					<option value="Quadra1">Quadra1</option>
+					<option value="Quadra2">Quadra2</option>
+					<option value="Quadra3">Quadra3</option>
+					<option value="quadraareia">Quadra Areia</option>
+				</select>
+				<br>
+				<input type="datetime-local" required id="horarioDia" value="">
+			</div>
+			<br>
+			<button onclick="agendar()">
+				<span>Agendar</span>
+			</button>
+		</form>
+
+	</div>
+	<!-- partial -->
+
+</body>
+
+</html>
